@@ -23,3 +23,8 @@ if [ ! -f .env ]; then
   chmod 600 .env
 fi
 echo "FreeLLMAPI instalado em $MOTOR"
+
+# Dependências do Estúdio (three.js, para o escritório 3D funcionar sem internet).
+cd "$REPO"
+[ -d node_modules/three ] || npm install --no-audit --no-fund
+echo "Estúdio pronto em $REPO"
