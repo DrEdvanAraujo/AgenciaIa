@@ -1,0 +1,17 @@
+{
+  "keys": [
+    { "platform": "kilo", "key": "no-key", "label": "Kilo (sem chave)", "enabled": false },
+    { "platform": "ovh", "key": "no-key", "label": "OVH (sem chave)", "enabled": false }
+  ],
+  "customProviders": [
+    { "baseUrl": "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1", "apiKey": "no-key", "label": "OVH gratis",
+      "models": [
+        { "model": "gpt-oss-120b", "displayName": "GPT-OSS 120B (OVH)" },
+        { "model": "Meta-Llama-3_3-70B-Instruct", "displayName": "Llama 3.3 70B (OVH)" },
+        { "model": "Qwen3.8-27B", "displayName": "Qwen 3.8 27B (OVH)" }
+      ] },
+    { "baseUrl": "https://api.kilo.ai/api/gateway", "apiKey": "no-key", "label": "Kilo gratis",
+      "models": [ { "model": "kilo-auto/free", "displayName": "Kilo Auto (gratis)" } ] }
+  ],
+  "routing": { "strategy": "balanced" }
+}

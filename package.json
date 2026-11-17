@@ -1,0 +1,14 @@
+{
+  "name": "agenciaia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Estúdio de agentes de IA da AgenciaIa, usando o FreeLLMAPI como motor.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "iniciar": "bash scripts/iniciar.sh",
+    "instalar-motor": "bash scripts/instalar-motor.sh",
+    "testar": "node scripts/testar.mjs"
+  }
+}
