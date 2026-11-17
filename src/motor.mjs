@@ -22,7 +22,7 @@ export async function statusMotor() {
     const j = await r.json();
     return { ok: true, modelos: Array.isArray(j.data) ? j.data.length : 0 };
   } catch {
-    return { ok: false, motivo: `Não consegui falar com o FreeLLMAPI em ${url}. Ele está ligado?` };
+    return { ok: false, motivo: `Não consegui falar com o FreeLLMAPI em ${url}. Ele está ligado? O app do Windows/Mac usa http://127.0.0.1:31415/v1.` };
   }
 }
 

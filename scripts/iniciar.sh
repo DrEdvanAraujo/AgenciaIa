@@ -20,7 +20,7 @@ if [ -z "${FREELLMAPI_KEY:-}" ]; then
   fi
   FREELLMAPI_KEY="$(cd "$MOTOR/server" && node -e "const D=require('better-sqlite3');console.log(new D('data/freeapi.db',{readonly:true}).prepare(\"SELECT value FROM settings WHERE key='unified_api_key'\").get().value)")"
   export FREELLMAPI_KEY
-  export FREELLMAPI_URL="${FREELLMAPI_URL:-http://localhost:3001/v1}"
+  export FREELLMAPI_URL="http://127.0.0.1:3001/v1"  # motor local iniciado por este script
 fi
 
 exec node server.mjs

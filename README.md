@@ -23,13 +23,14 @@ Você precisa do **Node.js 20 ou mais novo** e do **FreeLLMAPI** rodando (o app 
 
 1. No FreeLLMAPI, abra **Chaves** e clique em **Copiar chave de API**.
 2. Neste repositório, copie `.env.example` para `.env` e cole a chave em `FREELLMAPI_KEY`.
+   O app do Windows/Mac atende em `http://127.0.0.1:31415/v1`, que já é o padrão do `.env.example`. Se a porta for outra, ela aparece em "Running on" no menu do ícone ao lado do relógio. Instalações por Docker usam `http://127.0.0.1:3001/v1`.
 3. Inicie o Estúdio:
 
 ```bash
 npm start
 ```
 
-4. Abra http://localhost:8080 no navegador.
+4. Abra http://localhost:8080 no navegador. No Windows, rode o comando no Prompt de Comando aberto dentro da pasta (digite `cmd` na barra de endereço do Explorador de Arquivos).
 
 Para conferir se está tudo certo (com o Estúdio ligado):
 
